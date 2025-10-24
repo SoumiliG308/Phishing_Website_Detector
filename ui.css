@@ -1,0 +1,162 @@
+/* ===== Base Page Styling ===== */
+/* ===== Force Full App Background ===== */
+div.stApp, .main {
+    background: linear-gradient(135deg, #1B3C53 20%, #96A78D 80%) !important;
+    color: #fff !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* ===== Main Title ===== */
+h1 {
+    color: #0a2540 !important;
+    text-align: center !important;
+    font-size: clamp(1.8rem, 4vw, 2.8rem) !important;
+    font-weight: 900 !important;
+    margin-top: 30px !important;
+    margin-bottom: 25px !important;
+    padding: 10px !important;
+    position: relative !important;
+    left: -20px !important; /* move title slightly left */
+    white-space: nowrap;           /* optional: forces single line, may overflow */
+    overflow: hidden;              /* hide overflow if too long */
+}
+
+h1::after {
+    content: "" ;
+    display: block;
+    width: 90px;
+    height: 4px;
+    background: linear-gradient(90deg, #ff4b4b, #0a66c2);
+    margin: 12px auto 0 auto;
+    border-radius: 3px;
+}
+
+/* ===== Subtitle / Description ===== */
+.subtitle {
+    color: #2c3e50 !important;
+    font-size: 1.1em !important;
+    text-align: center !important;
+    margin: -10px auto 30px auto !important;
+    padding: 8px 15px !important;
+    display: inline-block;
+    border-left: 4px solid #FF4B4B !important;
+    border-radius: 4px !important;
+    background-color: #fefefe !important;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05) !important;
+}
+
+/* ===== Section Headers ===== */
+h2, h3 {
+    color: #11224E !important;
+    font-weight: 700 !important;
+    border-left: 5px solid #FF4B4B !important;
+    padding-left: 15px !important;
+    margin-top: 50px !important;
+}
+
+/* ===== Buttons ===== */
+button[kind="primary"], .stButton>button {
+    background: linear-gradient(45deg, #0a66c2, #007bff) !important;
+    color: white !important;
+    border-radius: 10px !important;
+    border: none !important;
+    font-weight: 600 !important;
+    padding: 0.6rem 1.2rem !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+button[kind="primary"]:hover, .stButton>button:hover {
+    background: linear-gradient(45deg, #004a99, #0059c2) !important;
+    transform: scale(1.05) !important;
+}
+
+/* ===== Radio Buttons & Inputs ===== */
+.stRadio div, .stTextInput label {
+    color: #11224E !important;
+    font-weight: 600 !important;
+}
+
+.stTextInput>div>div>input {
+    border-radius: 10px !important;
+    border: 1.5px solid #ccc !important;
+    transition: border 0.3s !important;
+}
+
+.stTextInput>div>div>input:focus {
+    border: 1.5px solid #007bff !important;
+    box-shadow: 0 0 5px rgba(0,123,255,0.3) !important;
+}
+
+/* ===== Info, Success, Error Boxes ===== */
+.stInfo, .stSuccess, .stError {
+    border-radius: 12px !important;
+}
+
+/* Success message - legitimate site */
+.stSuccess {
+    background: #1E5128 !important;
+    border-left: 6px solid #1B4D21 !important;
+}
+
+/* Error message - phishing detected */
+.stError {
+    background: #750E21 !important;
+    border-left: 6px solid #dc3545 !important;
+}
+
+/* Info message */
+.stInfo {
+    background: #d1ecf1 !important;
+    border-left: 6px solid #0c5460 !important;
+}
+
+/* ===== Confidence Section ===== */
+[data-testid="stMarkdownContainer"] strong {
+    color: #0a2540 !important;
+}
+
+/* ===== Center Alignment for Results ===== */
+.stSubheader {
+    text-align: center !important;
+}
+
+/* ===== Footer / Small Text ===== */
+small {
+    display: block !important;
+    text-align: center !important;
+    color: #888 !important;
+    margin-top: 50px !important;
+}
+
+/* ===== Additional fixes for common elements ===== */
+/* Fix for radio button containers */
+.stRadio > div {
+    background-color: white !important;
+    padding: 10px !important;
+    border-radius: 8px !important;
+    border: 1px solid #e0e0e0 !important;
+}
+
+/* Fix for columns layout */
+.stColumn {
+    padding: 10px !important;
+}
+
+/* Fix for spinner */
+.stSpinner > div > div {
+    border-top-color: #0a66c2 !important;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    text-align: center !important;
+    color: #e2e8f0 !important;
+    padding: 25px !important;
+    border-radius: 15px !important;
+    margin-top: 40px !important;
+}
+.footer p, .footer small {
+    color: #a0aec0 !important;
+    margin: 5px 0 !important;
+}
