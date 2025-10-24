@@ -5,8 +5,6 @@ div.stApp, .main {
     color: #fff !important;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-
 /* ===== Main Title ===== */
 h1 {
     color: #0a2540 !important;
@@ -17,9 +15,9 @@ h1 {
     margin-bottom: 25px !important;
     padding: 10px !important;
     position: relative !important;
-    left: -20px !important; /* move title slightly left */
-    white-space: nowrap;           /* optional: forces single line, may overflow */
-    overflow: hidden;              /* hide overflow if too long */
+    left: -20px !important; 
+    white-space: nowrap;           
+    overflow: hidden;             
 }
 
 h1::after {
@@ -65,7 +63,6 @@ button[kind="primary"], .stButton>button {
     padding: 0.6rem 1.2rem !important;
     transition: all 0.2s ease-in-out !important;
 }
-
 button[kind="primary"]:hover, .stButton>button:hover {
     background: linear-gradient(45deg, #004a99, #0059c2) !important;
     transform: scale(1.05) !important;
@@ -76,13 +73,11 @@ button[kind="primary"]:hover, .stButton>button:hover {
     color: #11224E !important;
     font-weight: 600 !important;
 }
-
 .stTextInput>div>div>input {
     border-radius: 10px !important;
     border: 1.5px solid #ccc !important;
     transition: border 0.3s !important;
 }
-
 .stTextInput>div>div>input:focus {
     border: 1.5px solid #007bff !important;
     box-shadow: 0 0 5px rgba(0,123,255,0.3) !important;
@@ -130,20 +125,16 @@ small {
 }
 
 /* ===== Additional fixes for common elements ===== */
-/* Fix for radio button containers */
+
 .stRadio > div {
     background-color: white !important;
     padding: 10px !important;
     border-radius: 8px !important;
     border: 1px solid #e0e0e0 !important;
 }
-
-/* Fix for columns layout */
 .stColumn {
     padding: 10px !important;
 }
-
-/* Fix for spinner */
 .stSpinner > div > div {
     border-top-color: #0a66c2 !important;
 }
