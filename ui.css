@@ -1,5 +1,4 @@
 /* ===== Base Page Styling ===== */
-/* ===== Force Full App Background ===== */
 div.stApp, .main {
     background: linear-gradient(135deg, #1B3C53 20%, #96A78D 80%) !important;
     color: #fff !important;
